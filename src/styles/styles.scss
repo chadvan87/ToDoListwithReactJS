@@ -1,0 +1,131 @@
+@import "buttons"; 
+@import "todo";
+@import "color";
+.App{ //Nesting in SCSS
+    margin: 45px auto;
+    max-width: 550px;
+    min-width: 350px;
+    width: 70vw;
+    padding: 12px 10px ;
+    border-radius: 6%;
+    text-align: center; 
+    // canh list o giua
+
+// Start of Button Styling 
+.btn-group{
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .check-btn,
+  .trash-btn,
+  .edit-btn,
+  .color-btn
+  {
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    background: none;
+  }
+
+.clear_btn{
+    @include button_status;
+    background-color: #c20f34;
+    border-radius: 10px;
+    min-width: 18%;
+    padding: 9px;
+}
+  }
+ 
+.input {
+    border-radius: 12px;
+    border-style: hidden;
+    outline: none;
+    min-width: 87%;
+    padding: 8px;   
+    background-color: #eeeeee;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.add{
+    border-radius: 12px;
+    min-width: 92%;
+    padding: 12px;
+    color:#fefefe;
+    background-color: #5c7d8a;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
+.status-btn{
+    display: inline-flex;
+    gap:  6px;
+    justify-content: center;
+    margin-top: 5%;
+
+.all-btn{
+    border-radius: 9px;
+    @include button_status;
+    color: #000;
+    min-width: 30%;
+    padding: 12px ;
+    background-color: #d8e2e6;
+}
+.completed-btn{
+    @include button_status;
+    border-radius: 10px;
+    min-width: 40%;
+    padding: 9px;
+    background-color: #5c7d8a;
+}
+.uncompleted-btn{
+    @include button_status;
+    border-radius: 9px;
+    min-width: 42%;
+    padding: 9px ;
+    background-color: #5c7d8a;
+}
+.clear_btn{
+    @include button_status;
+    min-width: 42%;
+    padding: 9px ;
+    background-color: #5c7d8a;
+}
+.status-btn{
+    @include button_status;
+    border-radius: 10px;
+    min-width: 40%;
+    padding: 10px;
+    background-color: #256a8d;
+}
+.btn--active{
+    background-color: #5c7d8a;
+}
+// End of Button Styling
+
+}
+
+.completed { /*Set for the check button*/
+    text-decoration: line-through;
+    color: #fefefe;
+    opacity: 0.5;
+  }
+
+/* Light and dark mode start from here */
+#light{
+    background-color:#ffffff;
+  }
+  #dark{
+    background-color: #506477;
+  }
+  
+  .switch{
+     display: flex;
+     justify-content: flex-end;
+     width: 100vw;
+     margin-top: 2%;
+     align-items: left;
+  }
+//End of Light Mode Dark Mode
