@@ -1,0 +1,21 @@
+.todo-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.todo-list {
+  min-width: 97%;
+}
+
+
+.todo li {
+  flex: 1;
+  text-align: left;
+  width: 150px;
+  /* set width va word wrap de todolist tu xuong dong */
+  word-wrap: break-word;
+}
+
+.todo-item {
+  padding: 0rem 0.5rem;
+}/*# sourceMappingURL=todo.css.map */

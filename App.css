@@ -1,0 +1,19 @@
+@import "./styles/styles.css"; 
+/* Import style tu scss */
+ 
+ul{
+  list-style-type: none;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+ 
+html,
+body {
+  background-color: #8bd8e2;
+  font-family: 'Times New Roman', Times, serif;
+}
+ 
+.active{
+  background-color:red;
+}
